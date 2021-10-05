@@ -40,8 +40,6 @@ test("adds a potion to inventory", () => {
     player.addPotion(new Potion());
 
     expect(player.inventory.length).toBeGreaterThan(oldCount);
-
-    expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()));
 });
 
 test("uses a potion from the inventory", () => {
